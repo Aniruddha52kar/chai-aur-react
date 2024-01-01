@@ -8,7 +8,7 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import  User  from './components/User/User.jsx'
-import Github from './components/Github/Github'
+import Github, { githubInfoLoader } from './components/Github/Github'
 //Note - App.jsx ko lena hi nahi hai kyu ki direct aapn ne React-Router install kiya hai to sab main.jsx mai honga 
 // 2. aapn lenge RouterProvider
 // 3. router kese banate hai ?  aur ye 2 tarike se bante hai 
@@ -16,6 +16,9 @@ import Github from './components/Github/Github'
 // 5. children lenege bohot value honge is liye [array liye]
 //3.1 router ko bata diye kese bana diye kar ke pass kar diye value us me 
 // child ke udner path waga re dal ke page add hote hai
+// 4 loader - koi bhi data fetch kar na hai to direct api call yaha se hi mar sakh te hai
+
+//**********//////***** */ */
 
 //1st method are as follow
 
@@ -42,6 +45,7 @@ import Github from './components/Github/Github'
 // ])
 
 // 2nd easy method are as follow
+//createBrowserRouter se hi bane ga 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -50,7 +54,11 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/user/:userid' element={<User />} />
-      <Route path='github' element={<Github />} />
+      <Route
+      loader={githubInfoLoader}
+       path='github'
+      element={<Github />}
+       />
     </Route>
   )
 )
