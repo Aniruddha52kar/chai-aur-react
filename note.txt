@@ -1,0 +1,12 @@
+appwrite - web site hai jaha par tum aapna kuch bhi deta aur strore kar sakh te hai 
+imp hai ki is me front end ke liye acch hai 
+aur is ka documentation bohot acccha hai is ka
+
+tiny.cloud -  us  kar na aur documateation dekh  na is ka 
+
+parsing kar na padeh ga to aapn use kare ge 
+"npmjs" - html React parcale wo use kare ge 
+
+react form use kare ge apn jaha hook use kare ge 
+
+react hook from hai open source hai ye 

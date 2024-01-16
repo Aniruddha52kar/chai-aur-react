@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import { useTodo } from '../context/TodoContext'
 
+/**
+ * The TodoForm component is a form that allows users to input and add new todos.
+ * @returns The TodoForm component is returning a form element with an input field and a button. The
+ * input field is used to enter a todo item, and the button is used to add the todo item to the list.
+ */
 function TodoForm() {
      const [todo, setTodo] = useState("")
      const {addTodo} = useTodo()

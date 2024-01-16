@@ -1,3 +1,4 @@
+/* This code is creating a context for managing todo items in a React application. */
 import { createContext, useContext } from "react";
 
 //context -  yane kis chij ke bare me bat kar na sign up ke bare me login ke bare me bat kar na  
