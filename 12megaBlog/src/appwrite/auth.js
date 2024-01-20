@@ -1,7 +1,8 @@
-// auth create kar diye aapn nne 
 
-import conf from '../conf.js'
+
+import conf from '../conf/conf.js'
 import { Client, Account, ID } from "appwrite";
+// auth create kar diye aapn nne 
 
 export class AuthService {
     client = new Client();
