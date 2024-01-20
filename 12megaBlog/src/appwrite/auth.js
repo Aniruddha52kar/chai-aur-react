@@ -4,7 +4,7 @@ import conf from '../conf/conf.js'
 import { Client, Account, ID } from "appwrite";
 // auth create kar diye aapn nne 
 
-export class AuthService {
+export class authService {
     client = new Client();
     account;
 
@@ -65,9 +65,9 @@ export class AuthService {
 }
 
 
-const authService = new AuthService();
+const authService = new authService();
 
-export default AuthService;
+export default authService;
 
 // ek to chaiye client aur ek chaiye user
 

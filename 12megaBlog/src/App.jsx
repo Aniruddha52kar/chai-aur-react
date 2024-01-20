@@ -2,7 +2,7 @@
 import './App.css'
 import React, {useEffect, useState} from 'react'
 import {useDispatch} from 'react-redux' // dispatch redux me se aaye ga 
-import AuthService from './appwrite/auth'
+import authService from './appwrite/auth'
 import {login, logout} from "./store/authSlice" // kya chaiye login and log out 
 
 import { Footer, Header } from './components'
@@ -18,7 +18,7 @@ function App() {
   const dispatch = useDispatch()//dispatch to lage ga use state me changes kare ge to 
 
   useEffect (()=>{
-    AuthService.getCurrentUser() // agar mil gya to
+    authService.getCurrentUser() // agar mil gya to
     .then((userData) => {// agar user data ai to 
       if (userData) {
         dispatch(login({userData}))// object pass kar diye 
@@ -26,9 +26,9 @@ function App() {
         dispatch(logout())
       }
 
-    }) // ek then laga denge 
+    }) // ek .then laga denge 
 
-    .finally(()=> setLoading(false)) // .finally ho ya .catch ho to finally run hota hi hai any how  
+    .finally(() => setLoading(false)) // .finally ho ya .catch ho to finally run hota hi hai any how  
   
   }, [])
   

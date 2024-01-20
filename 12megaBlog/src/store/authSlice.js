@@ -1,7 +1,7 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState ={
+const initialState = {
     status: false, // user authenticated nahi hai 
     userData: null // abhi koi user data nahi hai
 
