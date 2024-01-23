@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> </div>
+</body>
+</html>
+<script>
+
+
+ let cont = document.querySelector('.container');
+ let div1 =  document.createElement('div');
+ div1.setAttribute('id', 'box');
+
+ let child = document.createElement('h1');
+ child.innerText = "Login form"
+
+ let child2 = document.createElement('p');
+ child2.innerText = "User name"
+
+ let child3 = document.createElement('input');
+ child3.setAttribute('placeholder', 'user');
+
+ let child4 = document.createElement('p');
+ child4.innerText = "Password"
+
+ let child5 = document.createElement('input');
+ child5.setAttribute('placeholder', 'password');
+
+
+
+let div3 = document.createElement('div')
+div3.setAttribute('id' , 'box')
+let btn = document.createElement('button');
+ btn.setAttribute('type', 'submit');
+ btn.setAttribute('class', 'btn');
+
+
+
+
+
+
+
+ div1.appendChild(child);
+
+ cont.appendChild(div1);
+ 
+ div1.appendChild(child2);
+ div1.appendChild(child3);
+ div1.appendChild(child4);
+ div1.appendChild(child5);
+ div1.appendChild(btn);
+ 
+ cont.appendChild(div3);
+</script>
